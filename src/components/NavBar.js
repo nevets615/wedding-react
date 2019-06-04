@@ -14,7 +14,6 @@ const Navbar = () => {
   };
   return (
     <div className="nav">
-     
       {!id ? (
         <>
           <div className="nav">
