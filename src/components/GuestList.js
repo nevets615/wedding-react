@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
-import Guest from './Guest';
-import './Guest.css';
+import Guests from './Guests';
+
 import AddGuest from './AddGuest';
 
 class GuestList extends React.Component {
@@ -19,7 +19,7 @@ class GuestList extends React.Component {
 			const id = localStorage.getItem('id');
 			this.setState({ loggedIn: true });
 			axios
-				.get(`https://pintereach-buildweek.herokuapp.com/users/${id}/Guests`, {
+				.get(`https://wedding_backend.herokuapp.com/users/${id}/Guests`, {
 					headers: { authorization: token }
 				})
 				.then((res) => {
@@ -38,7 +38,7 @@ class GuestList extends React.Component {
 	deleteGuest = (id) => {
 		const token = localStorage.getItem('authorization');
 		axios
-			.delete(`https://pintereach-buildweek.herokuapp.com/Guests/${id}`, {
+			.delete(`https://wedding-backend.herokuapp.com/Guests/${id}`, {
 				headers: { authorization: token }
 			})
 			.then((res) => {

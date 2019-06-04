@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 import GuestList from "./GuestList";
-import "./Guest.css";
+// import "./Guest.css";
 import AddGuest from "./AddGuest";
 
 class GuestForm extends React.Component {
@@ -14,7 +14,7 @@ class GuestForm extends React.Component {
   componentDidMount() {
     // const {id} = this.props.match.params;
     axios
-      .get(`https://pintereach-buildweek.herokuapp.com/guests/`)
+      .get(`https://wedding-backend.herokuapp.com/guests/`)
       .then(res => {
         console.log(res.data);
         this.setState({ guests: res.data });
@@ -27,7 +27,7 @@ class GuestForm extends React.Component {
 
   deleteguest = id => {
     axios
-      .delete(`https://pintereach-buildweek.herokuapp.com/guests/${id}`)
+      .delete(`https://wedding-backend.herokuapp.com/guests/${id}`)
 	  .then(res => {
 		console.log(res.status)
 		this.setState({ guests: res.data });

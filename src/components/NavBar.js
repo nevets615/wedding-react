@@ -1,5 +1,5 @@
 import React from "react";
-import logos from "../components/logos.png";
+
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
@@ -14,7 +14,7 @@ const Navbar = () => {
   };
   return (
     <div className="nav">
-      <img className="img" src={logos} alt="Logo" />
+     
       {!id ? (
         <>
           <div className="nav">
