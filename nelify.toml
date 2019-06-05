@@ -2,4 +2,4 @@
 
 base = "./wedding-react"
 publish = "./wedding-react/build"
-command = "yarn build"
+command = "npm build"
