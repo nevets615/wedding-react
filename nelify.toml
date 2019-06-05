@@ -1,0 +1,5 @@
+[build]
+
+base = "./wedding-react"
+publish = "./wedding-react/build"
+command = "yarn build"
