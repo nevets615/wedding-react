@@ -26,8 +26,8 @@ class App extends Component {
         <div className="header">
           <h1>RSVP Here</h1>
         </div>
-        {/* <Route path="/login" component={Login} />
-        <Route path="/register" render={props => <Register {...props} />} /> */}
+        <Route path="/login" component={Login} />
+        <Route path="/register" render={props => <Register {...props} />} />
         <Route
           exact
           path="/"
