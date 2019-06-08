@@ -15,7 +15,7 @@ class Register extends Component {
 	handleRegister = (e) => {
 		e.preventDefault();
 		axios
-			.post('https://wedding-backend.herokuapp.com/auth/register', {
+			.post('https://calm-mountain-32951.herokuapp.com/auth/register', {
 				username: this.state.username,
 				password: this.state.password,
 				name: this.state.name,

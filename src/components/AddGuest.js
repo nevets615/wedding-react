@@ -19,7 +19,7 @@ class AddGuest extends React.Component {
     e.preventDefault();
     axios
       .post(
-        "https://wedding-backend.herokuapp.com/guests",
+        "https://calm-mountain-32951.herokuapp.com/guests",
         {
           name: this.state.name,
           email: this.state.email,
