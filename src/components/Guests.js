@@ -14,7 +14,7 @@ class GuestForm extends React.Component {
   componentDidMount() {
     // const {id} = this.props.match.params;
     axios
-      .get(`https://calm-mountain-32951.herokuapp.com/guests/`)
+      .get(`https://shielded-anchorage-68840.herokuapp.com/guests/`)
       .then(res => {
         console.log(res.data);
         this.setState({ guests: res.data });
@@ -27,7 +27,7 @@ class GuestForm extends React.Component {
 
   deleteguest = id => {
     axios
-      .delete(`https://calm-mountain-32951.herokuapp.com/guests/${id}`)
+      .delete(`https://shielded-anchorage-68840.herokuapp.com/guests/${id}`)
 	  .then(res => {
 		console.log(res.status)
 		this.setState({ guests: res.data });

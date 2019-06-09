@@ -19,7 +19,7 @@ class GuestList extends React.Component {
 			const id = localStorage.getItem('id');
 			this.setState({ loggedIn: true });
 			axios
-				.get(`https://calm-mountain-32951.herokuapp.com/users/${id}/Guests`, {
+				.get(`https://shielded-anchorage-68840.herokuapp.com/users/${id}/Guests`, {
 					headers: { authorization: token }
 				})
 				.then((res) => {
@@ -38,7 +38,7 @@ class GuestList extends React.Component {
 	deleteGuest = (id) => {
 		const token = localStorage.getItem('authorization');
 		axios
-			.delete(`https://calm-mountain-32951.herokuapp.com/Guests/${id}`, {
+			.delete(`https://shielded-anchorage-68840.herokuapp.com/Guests/${id}`, {
 				headers: { authorization: token }
 			})
 			.then((res) => {

@@ -15,7 +15,7 @@ class Login extends Component {
 	handleLogin = (e) => {
     e.preventDefault();
 		axios
-			.post('https://calm-mountain-32951.herokuapp.com/auth/login', {
+			.post('https://shielded-anchorage-68840.herokuapp.com/login', {
 				username: this.state.username,
 				password: this.state.password
 			})

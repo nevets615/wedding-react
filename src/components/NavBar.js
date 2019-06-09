@@ -38,7 +38,7 @@ const Navbar = () => {
         </NavLink>
       </div>
       <div>
-        <a href="http://weddingpage.netlify.com/">Home</a>
+        <a href="https://stevenandkayla-wedding.stevenrjefferson.com/">Home</a>
       </div>
     </div>
   );
