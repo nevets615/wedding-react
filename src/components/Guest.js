@@ -1,5 +1,5 @@
 import React from "react";
-// import "./Guest.css";
+import "./Guest.css";
 
 function Guest(props) {
   const { title, url, id, type } = props.guest;

@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 import GuestList from "./GuestList";
-// import "./Guest.css";
+import "../Guest.css";
 import AddGuest from "./AddGuest";
 
 class GuestForm extends React.Component {
