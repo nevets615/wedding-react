@@ -56,7 +56,7 @@ class GuestList extends React.Component {
 				<>
 					<AddGuest toggler={this.toggler}/>
 					<div className="GuestList">
-					{this.state.Guests.map((guest) => (
+					{this.state.guests.map((guest) => (
 						<Guest deleteGuest={this.deleteGuest} key={guest.id} guest={guest} />))}
 				</div>
 				</>
