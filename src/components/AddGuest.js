@@ -53,7 +53,7 @@ class AddGuest extends React.Component {
           <input
             type="text"
             name="name"
-            value={this.state.name}
+            value={this.state.names}
             onChange={this.handleChange}
             placeholder="name"
           />
