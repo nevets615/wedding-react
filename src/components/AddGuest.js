@@ -14,7 +14,7 @@ class AddGuest extends React.Component {
     };
   }
   addGuest = e => {
-    const token = localStorage.getItem("authorization");
+    const token = localStorage.getItem("Authorization");
     const id = localStorage.getItem("id");
     e.preventDefault();
     axios
@@ -52,7 +52,7 @@ class AddGuest extends React.Component {
         <form onSubmit={this.addGuest}>
           <input
             type="text"
-            name="name"
+            name="names"
             value={this.state.names}
             onChange={this.handleChange}
             placeholder="name"

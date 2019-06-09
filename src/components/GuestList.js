@@ -61,7 +61,7 @@ class GuestList extends React.Component {
 				</div>
 				</>
 			):(
-        <h3>Please Log In</h3>
+        <h3>Please Register and Log In</h3>
 			)}				
 			</div>
 		);
