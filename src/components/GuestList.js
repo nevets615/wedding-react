@@ -20,7 +20,7 @@ class GuestList extends React.Component {
       this.setState({ loggedIn: true });
       axios
         .get(
-          `https://shielded-anchorage-68840.herokuapp.com/users/${id}/guests`,
+          `https://shielded-anchorage-68840.herokuapp.com/guests`,
           {
             headers: { Authorization: token }
           }
