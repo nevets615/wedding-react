@@ -17,6 +17,7 @@ class AddGuest extends React.Component {
     const token = localStorage.getItem("Authorization");
     const id = localStorage.getItem("id");
     e.preventDefault();
+   
     axios
       .post(
         "https://shielded-anchorage-68840.herokuapp.com/addguest",
@@ -27,7 +28,7 @@ class AddGuest extends React.Component {
           number_of_guests: this.state.number_of_guests,
           number_of_rooms: this.state.number_of_rooms,
           dates_staying: this.state.dates_staying,
-          user_id: id
+          id: id
         },
 
         {
