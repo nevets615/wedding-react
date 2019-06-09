@@ -28,7 +28,7 @@ class AddGuest extends React.Component {
           number_of_guests: this.state.number_of_guests,
           number_of_rooms: this.state.number_of_rooms,
           dates_staying: this.state.dates_staying,
-          id: id
+          user_id: id
         },
 
         {
