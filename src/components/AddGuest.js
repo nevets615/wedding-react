@@ -5,7 +5,7 @@ class AddGuest extends React.Component {
   constructor(props) {
     super();
     this.state = {
-      name: "",
+      names: "",
       email: "",
       phone_number: "",
       number_of_guests: "",
