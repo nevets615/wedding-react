@@ -31,7 +31,7 @@ class AddGuest extends React.Component {
         },
 
         {
-          headers: { authorization: token }
+          headers: { Authorization: token }
         }
       )
       .then(res => {
