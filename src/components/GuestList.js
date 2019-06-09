@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import Guests from './Guests';
+import guests from './guests';
 
 import AddGuest from './AddGuest';
 
@@ -8,7 +8,7 @@ class GuestList extends React.Component {
 	constructor() {
 		super();
 		this.state = {
-			Guests: [],
+			guests: [],
 			loggedIn: false,
 			toggler: true
 		};
@@ -24,7 +24,7 @@ class GuestList extends React.Component {
 				})
 				.then((res) => {
 					console.log(res.data);
-					this.setState({ Guests: res.data });
+					this.setState({ guests: res.data });
 					console.log(this.state);
 				})
 				.catch((err) => {
@@ -38,7 +38,7 @@ class GuestList extends React.Component {
 	deleteGuest = (id) => {
 		const token = localStorage.getItem('authorization');
 		axios
-			.delete(`https://shielded-anchorage-68840.herokuapp.com/Guests/${id}`, {
+			.delete(`https://shielded-anchorage-68840.herokuapp.com/guests/${id}`, {
 				headers: { authorization: token }
 			})
 			.then((res) => {
@@ -56,8 +56,8 @@ class GuestList extends React.Component {
 				<>
 					<AddGuest toggler={this.toggler}/>
 					<div className="GuestList">
-					{this.state.Guests.map((Guest) => (
-						<Guest deleteGuest={this.deleteGuest} key={Guest.id} Guest={Guest} />))}
+					{this.state.Guests.map((guest) => (
+						<Guest deleteGuest={this.deleteGuest} key={guest.id} guest={guest} />))}
 				</div>
 				</>
 			):(
