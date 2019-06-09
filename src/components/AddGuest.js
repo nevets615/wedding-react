@@ -69,28 +69,28 @@ class AddGuest extends React.Component {
             name="phone_number"
             value={this.state.phone_number}
             onChange={this.handleChange}
-            placeholder="phone_number"
+            placeholder="phone number"
           />
           <input
             type="text"
             name="number_of_guests"
             value={this.state.number_of_guests}
             onChange={this.handleChange}
-            placeholder="number_of_guests"
+            placeholder="number of guests"
           />
           <input
             type="text"
             name="number_of_rooms"
             value={this.state.number_of_rooms}
             onChange={this.handleChange}
-            placeholder="number_of_rooms"
+            placeholder="number of rooms to save"
           />
           <input
             type="text"
             name="dates_staying"
             value={this.state.dates_staying}
             onChange={this.handleChange}
-            placeholder="dates_staying"
+            placeholder="dates staying"
           />
 
           <button onClick={this.addGuest}>Add new Guest</button>

@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import guests from './guests';
+import Guest from './Guests';
 
 import AddGuest from './AddGuest';
 
