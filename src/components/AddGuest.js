@@ -21,7 +21,7 @@ class AddGuest extends React.Component {
       .post(
         "https://shielded-anchorage-68840.herokuapp.com/addguests",
         {
-          name: this.state.name,
+          names: this.state.names,
           email: this.state.email,
           phone_number: this.state.phone_number,
           number_of_guests: this.state.number_of_guests,
