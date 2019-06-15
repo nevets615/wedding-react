@@ -14,7 +14,7 @@ class GuestList extends React.Component {
     };
   }
   componentDidMount() {
-    const token = localStorage.getItem("Authorization");
+    const token = localStorage.getItem("authorization");
     if (localStorage.getItem("id")) {
       const id = localStorage.getItem("id");
       this.setState({ loggedIn: true });
@@ -22,7 +22,7 @@ class GuestList extends React.Component {
         .get(
           `https://shielded-anchorage-68840.herokuapp.com/guests`,
           {
-            headers: { Authorization: token }
+            headers: { authorization: token }
           }
         )
         .then(res => {

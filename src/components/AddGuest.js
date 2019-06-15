@@ -14,10 +14,10 @@ class AddGuest extends React.Component {
     };
   }
   addGuest = e => {
-    const token = localStorage.getItem("Authorization");
+    const token = localStorage.getItem("authorization");
     const id = localStorage.getItem("id");
     e.preventDefault();
-   
+
     axios
       .post(
         "https://shielded-anchorage-68840.herokuapp.com/addguest",
@@ -32,16 +32,28 @@ class AddGuest extends React.Component {
         },
 
         {
-          headers: { Authorization: token }
+          headers: { authorization: token }
         }
       )
       .then(res => {
         console.log(res.status, res.data);
-        this.props.toggler();
+        this.setState({
+          names: "",
+          email: "",
+          phone_number: "",
+          number_of_guests: "",
+          number_of_rooms: "",
+          dates_staying: ""
+        });
+
+        window.location.reload();
       })
       .catch(err => {
         console.log(err);
       });
+  };
+  handleChange = e => {
+    this.setState({ [e.target.name]: e.target.value });
   };
   handleChange = e => {
     this.setState({ [e.target.name]: e.target.value });
