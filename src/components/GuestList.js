@@ -14,36 +14,23 @@ class GuestList extends React.Component {
     };
   }
   componentDidMount() {
-    const token = localStorage.getItem("Authorization");
-    if (localStorage.getItem("id")) {
-      const id = localStorage.getItem("id");
-      this.setState({ loggedIn: true });
-      axios
-        .get(
-          `https://shielded-anchorage-68840.herokuapp.com/guests`,
-          {
-            headers: { Authorization: token }
-          }
-        )
-        .then(res => {
-          console.log(res.data);
-          this.setState({ guests: res.data });
-          console.log(this.state);
-        })
-        .catch(err => {
-          console.log(err);
-        });
-    }
+    axios
+      .get(`https://shielded-anchorage-68840.herokuapp.com/guests`)
+      .then(res => {
+        console.log(res.data);
+        this.setState({ guests: res.data });
+        console.log(this.state);
+      })
+      .catch(err => {
+        console.log(err);
+      });
   }
   toggler = () => {
     this.setState({ toggler: !this.state.toggler });
   };
   deleteGuest = id => {
-    const token = localStorage.getItem("authorization");
     axios
-      .delete(`https://shielded-anchorage-68840.herokuapp.com/guests/${id}`, {
-        headers: { authorization: token }
-      })
+      .delete(`https://shielded-anchorage-68840.herokuapp.com/guests/${id}`)
       .then(res => {
         console.log(res.status);
         this.setState({ toggler: !this.state.toggler });
