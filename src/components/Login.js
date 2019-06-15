@@ -22,7 +22,7 @@ class Login extends Component {
 			.then((res) =>{ 
 				localStorage.setItem('authorization', res.data.tokenThing)
 				console.log(res.data)
-				localStorage.setItem('id', res.data.id)				
+				localStorage.setItem('id', res.data.payload)				
 				console.log(res.status)
 				this.props.history.push('/')
       })
