@@ -55,9 +55,7 @@ class AddGuest extends React.Component {
   handleChange = e => {
     this.setState({ [e.target.name]: e.target.value });
   };
-  handleChange = e => {
-    this.setState({ [e.target.name]: e.target.value });
-  };
+  
   render() {
     return (
       <div className="Forms">
