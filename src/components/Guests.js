@@ -14,7 +14,7 @@ class GuestForm extends React.Component {
   componentDidMount() {
     // const {id} = this.props.match.params;
     axios
-      .get(`https://shielded-anchorage-68840.herokuapp.com/guests`)
+      .get(`https://shielded-anchorage-68840.herokuapp.com/guests/`)
       .then(res => {
         console.log(res.data);
         this.setState({ guests: res.data });
