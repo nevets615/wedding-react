@@ -20,10 +20,10 @@ class Login extends Component {
 				password: this.state.password
 			})
 			.then((res) =>{ 
-				localStorage.setItem('authorization', res.data.tokenThingy)
-				console.log(res.data)
-				localStorage.setItem('id', res.data.id)				
-				console.log(res.status)
+				// localStorage.setItem('authorization', res.data.tokenThingy)
+				// console.log(res.data)
+				// localStorage.setItem('id', res.data.id)				
+				// console.log(res.status)
 				this.props.history.push('/')
       })
 			.catch((err) => {

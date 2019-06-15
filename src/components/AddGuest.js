@@ -14,10 +14,10 @@ class AddGuest extends React.Component {
     };
   }
   addGuest = e => {
-    const token = localStorage.getItem("authorization");
-    console.log(token);
+    // const token = localStorage.getItem("authorization");
+    // console.log(token);
 
-    const id = localStorage.getItem("id");
+    // const id = localStorage.getItem("id");
     e.preventDefault();
 
     axios
@@ -29,13 +29,13 @@ class AddGuest extends React.Component {
           phone_number: this.state.phone_number,
           number_of_guests: this.state.number_of_guests,
           number_of_rooms: this.state.number_of_rooms,
-          dates_staying: this.state.dates_staying,
-          user_id: id
-        },
-
-        {
-          headers: { authorization: token }
+          dates_staying: this.state.dates_staying
+          // user_id: id
         }
+
+        // {
+        //   headers: { authorization: token }
+        // }
       )
       .then(res => {
         console.log(res.status, res.data);
