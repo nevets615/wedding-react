@@ -22,7 +22,7 @@ class GuestList extends React.Component {
         .get(
           `https://shielded-anchorage-68840.herokuapp.com/guests`,
           {
-            headers: { authorization: token, id }
+            headers: { authorization: token }
           }
         )
         .then(res => {
@@ -42,7 +42,7 @@ class GuestList extends React.Component {
     const token = localStorage.getItem("authorization");
     axios
       .delete(`https://shielded-anchorage-68840.herokuapp.com/guests/${id}`, {
-        headers: { authorization: token , id}
+        headers: { authorization: token}
       })
       .then(res => {
         console.log(res.status);
