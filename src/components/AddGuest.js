@@ -15,8 +15,8 @@ class AddGuest extends React.Component {
   }
   addGuest = e => {
     const token = localStorage.getItem("authorization");
-    console.log(token)
-    
+    console.log(token);
+
     const id = localStorage.getItem("id");
     e.preventDefault();
 
@@ -57,7 +57,7 @@ class AddGuest extends React.Component {
   handleChange = e => {
     this.setState({ [e.target.name]: e.target.value });
   };
-  
+
   render() {
     return (
       <div className="Forms">
