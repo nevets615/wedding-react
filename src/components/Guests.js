@@ -38,7 +38,9 @@ class GuestForm extends React.Component {
   };
   render() {
     return (
+
       <div className="guestForm">
+        {console.log("something is happening in guests")}
         <AddGuest />
         <div className="guestList">
           {this.state.guests.map(guest => (
@@ -52,6 +54,7 @@ class GuestForm extends React.Component {
       </div>
     );
   }
+  
 }
 
 export default GuestForm;

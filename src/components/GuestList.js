@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-import Guest from "./Guests";
+import Guest from "./Guest";
 
 import AddGuest from "./AddGuest";
 
@@ -19,12 +19,9 @@ class GuestList extends React.Component {
       const id = localStorage.getItem("id");
       this.setState({ loggedIn: true });
       axios
-        .get(
-          `https://shielded-anchorage-68840.herokuapp.com/guests`,
-          {
-            headers: { authorization: token, id }
-          }
-        )
+        .get(`https://shielded-anchorage-68840.herokuapp.com/guests`, {
+          headers: { authorization: token }
+        })
         .then(res => {
           console.log(res.data);
           this.setState({ guests: res.data });
@@ -42,7 +39,7 @@ class GuestList extends React.Component {
     const token = localStorage.getItem("authorization");
     axios
       .delete(`https://shielded-anchorage-68840.herokuapp.com/guests/${id}`, {
-        headers: { authorization: token , id}
+        headers: { authorization: token }
       })
       .then(res => {
         console.log(res.status);
@@ -65,6 +62,7 @@ class GuestList extends React.Component {
                   key={guest.id}
                   guest={guest}
                 />
+              
               ))}
             </div>
           </>
