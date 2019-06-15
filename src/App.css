@@ -1,19 +1,19 @@
 .App {
-  
+  height: 800px;
   text-align: center;
   background-color: rgb(218, 230, 226);
   padding: 2px 0 0 0;
 }
 h1 {
   display: flex;
-  justify-content: space-evenly;
+ align-content: center;
   font-family: import styled from 'styled-components'; 
 }
 
 .header {
   display: flex;
   align-items: center;
-  margin: 0 40% ;
+  margin: 0 46%;
 }
 
 a {
@@ -46,12 +46,7 @@ ul {
   background-color: rgb(147, 185, 164);
 }
 
-.header {
-  display: flex;
-  padding: 100px 20px 0 20px;
-  justify-content: space-between;
-  align-items: center;
-}
+
 
 .activeNavButton {
   color: white;

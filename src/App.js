@@ -24,7 +24,7 @@ class App extends Component {
       <div className="App">
         <NavBar />
         <div className="header">
-          <h1>RSVP</h1>
+          <h1>Please Register and Login</h1>
         </div>
         <Route path="/login" component={Login} />
         <Route path="/register" render={props => <Register {...props} />} />
