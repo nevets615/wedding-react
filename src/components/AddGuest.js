@@ -15,6 +15,8 @@ class AddGuest extends React.Component {
   }
   addGuest = e => {
     const token = localStorage.getItem("authorization");
+    console.log(token)
+    
     const id = localStorage.getItem("id");
     e.preventDefault();
 
@@ -104,7 +106,7 @@ class AddGuest extends React.Component {
             placeholder="dates staying"
           />
 
-          <button onClick={this.addGuest}>Add new Guest</button>
+          <button onSubmit={this.addGuest}>Add new Guest</button>
         </form>
       </div>
     );
