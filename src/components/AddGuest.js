@@ -47,7 +47,7 @@ class AddGuest extends React.Component {
           dates_staying: ""
         });
 
-        window.location.reload();
+        // window.location.reload();
       })
       .catch(err => {
         console.log(err);

@@ -1,4 +1,9 @@
 .GuestForm {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color:rgb(147, 185, 164);
+  
 }
 .GuestList {
 }
