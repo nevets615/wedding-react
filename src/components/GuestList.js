@@ -24,6 +24,7 @@ class GuestList extends React.Component {
         })
         .then(res => {
           console.log(res.data);
+          const guests = res.data.filter(item => item.user_id === id)
           this.setState({ guests: res.data });
           console.log(this.state);
         })

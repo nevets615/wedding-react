@@ -46,8 +46,8 @@ class AddGuest extends React.Component {
           number_of_rooms: "",
           dates_staying: ""
         });
+        window.location.reload();
 
-        // window.location.reload();
       })
       .catch(err => {
         console.log(err);
