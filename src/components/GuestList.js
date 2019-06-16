@@ -38,7 +38,7 @@ class GuestList extends React.Component {
   deleteGuest = id => {
     const token = localStorage.getItem("authorization");
     axios
-      .delete(`https://shielded-anchorage-68840.herokuapp.com/guests/${id}`, {
+      .delete(`https://shielded-anchorage-68840.herokuapp.com/deleteguest/${id}`, {
         headers: { Authorization: token }
       })
       .then(res => {
