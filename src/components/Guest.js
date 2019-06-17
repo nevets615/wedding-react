@@ -15,12 +15,12 @@ function Guest(props) {
   return (
     <div>
       <div className="guest-wrap" key={id}>
-        <h3>name: {names}</h3>
-        <h3>email: {email}</h3>
-        <h3>phonenumber: {phone_number}</h3>
-        <h3>number of guests: {number_of_guests}</h3>
-        <h3>number of rooms: {number_of_rooms}</h3>
-        <h3>dates staying: {dates_staying}</h3>
+        <h4>name: {names}</h4>
+        <h4>email: {email}</h4>
+        <h4>phonenumber: {phone_number}</h4>
+        <h4>number of guests: {number_of_guests}</h4>
+        <h4>number of rooms: {number_of_rooms}</h4>
+        <h4>dates staying: {dates_staying}</h4>
         <p onClick={() => props.deleteGuest(id)}>Delete</p>
       </div>
     </div>
