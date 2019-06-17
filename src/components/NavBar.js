@@ -32,11 +32,7 @@ const Navbar = () => {
           Logout
         </div>
       )}
-      <div>
-        <NavLink to="/" activeClassName="activeNavButton">
-          Articles
-        </NavLink>
-      </div>
+     
       <div>
         <a href="https://stevenandkayla-wedding.stevenrjefferson.com/">Home</a>
       </div>
