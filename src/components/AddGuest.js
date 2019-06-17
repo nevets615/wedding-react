@@ -15,7 +15,7 @@ class AddGuest extends React.Component {
   }
   addGuest = e => {
     const token = localStorage.getItem("authorization");
-    console.log(token)
+    console.log(token);
     const id = localStorage.getItem("id");
     e.preventDefault();
 
@@ -47,7 +47,6 @@ class AddGuest extends React.Component {
           dates_staying: ""
         });
         window.location.reload();
-
       })
       .catch(err => {
         console.log(err);
@@ -56,11 +55,14 @@ class AddGuest extends React.Component {
   handleChange = e => {
     this.setState({ [e.target.name]: e.target.value });
   };
-  
+
   render() {
     return (
       <div className="Forms">
         <h3>Add New Guest</h3>
+        <h3>
+          The name field shoud be the name as it appears on your invitation.
+        </h3>
         <form onSubmit={this.addGuest}>
           <input
             type="text"
@@ -90,6 +92,10 @@ class AddGuest extends React.Component {
             onChange={this.handleChange}
             placeholder="number of guests"
           />
+          <h3>
+            We are blocking off rooms at a hotel for the occation. If you are
+            intersted please indicate how many rooms you will need.
+          </h3>
           <input
             type="text"
             name="number_of_rooms"
@@ -97,6 +103,10 @@ class AddGuest extends React.Component {
             onChange={this.handleChange}
             placeholder="number of rooms to save"
           />
+          <h3>
+            We will be arriving on the October 11th and leaving the morning of
+            October 14th. Please indicate the dates you will be in town.
+          </h3>
           <input
             type="text"
             name="dates_staying"

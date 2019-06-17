@@ -24,15 +24,11 @@ class App extends Component {
       <div className="App">
         <NavBar />
         <div className="header">
-          <h1>Please Register and Login</h1>
+        
         </div>
         <Route path="/login" component={Login} />
         <Route path="/register" render={props => <Register {...props} />} />
-        <Route
-          exact
-          path="/"
-          render={() => <GuestList guests={this.state.guests} />}
-        />
+        <Route exact path="/" render={() => <GuestList />} />
       </div>
     );
   }

@@ -1,17 +1,22 @@
 .GuestForm {
   display: flex;
-  justify-content: center;
+  
+  flex-direction: column;
   align-content: center;
   background-color:rgb(147, 185, 164);
   
 }
 .GuestList {
+  background-color:rgb(218, 230, 226);
+  display: flex;
+  justify-content: center;
 }
 
 .Forms {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px 0;
   background-color: rgb(147, 185, 164);
 }
 form {
