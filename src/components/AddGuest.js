@@ -61,7 +61,7 @@ class AddGuest extends React.Component {
       <div className="Forms">
         <h3>Add New Guest</h3>
         <h4>
-          The name field shoud be the name as it appears on your invitation.
+          The name field should be the name as it appears on your invitation.
         </h4>
         <form onSubmit={this.addGuest}>
           <input
@@ -93,8 +93,8 @@ class AddGuest extends React.Component {
             placeholder="number of guests"
           />
           <h4>
-            We are blocking off rooms at a hotel for the occation. If you are
-            intersted please indicate how many rooms you will need.
+            We are blocking off rooms at a hotel for the occasion. If you are
+            interested please indicate how many rooms you will need.
           </h4>
           <input
             type="text"
@@ -104,7 +104,7 @@ class AddGuest extends React.Component {
             placeholder="number of rooms to save"
           />
           <h4>
-            We will be arriving on the October 11th and leaving the morning of
+            We will be arriving on October 11th and leaving the morning of
             October 14th. Please indicate the dates you will be in town.
           </h4>
           <input
