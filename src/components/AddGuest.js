@@ -115,7 +115,7 @@ class AddGuest extends React.Component {
             placeholder="dates staying"
           />
 
-          <button onSubmit={this.addGuest}>Add new Guest</button>
+          <button onSubmit={this.addGuest}>Submit</button>
         </form>
       </div>
     );
