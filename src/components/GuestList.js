@@ -70,7 +70,7 @@ class GuestList extends React.Component {
           </>
         ) : (
           <div>
-          <h3>Please Register and Log In</h3>
+          <h3>Please Register and then Login. Once you have logged in there will be a simple form to fill out about your visit</h3>
           <img src={img} alt="logo" />
           </div>
         )}
