@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-
+import img from "../components/img/IMG_2935[196].jpg";
 class Register extends Component {
   constructor(props) {
     super(props);
@@ -48,6 +48,11 @@ class Register extends Component {
           />
           <button onSubmit={this.handleRegister}>Register</button>
         </form>
+        <h4>
+          Make sure you login after registering to complete RSVP information
+          form
+        </h4>
+        <img src={img} alt="logo" />
       </div>
     );
   }
