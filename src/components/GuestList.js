@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 import Guest from "./Guest";
-
+import img from "../components/img/IMG_2935[196].jpg";
 import AddGuest from "./AddGuest";
 
 class GuestList extends React.Component {
@@ -69,7 +69,10 @@ class GuestList extends React.Component {
             </div>
           </>
         ) : (
+          <div>
           <h3>Please Register and Log In</h3>
+          <img src={img} alt="logo" />
+          </div>
         )}
       </div>
     );
