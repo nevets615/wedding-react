@@ -61,3 +61,9 @@ img{
   height: 350px;
   width: 350px;
 }
+.guest-wrap{
+  border: 1px solid black;
+  padding: 5px;
+  margin: 5px;
+  background-color: rgb(147, 185, 164);
+ }
