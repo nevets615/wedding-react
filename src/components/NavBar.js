@@ -32,9 +32,11 @@ const Navbar = () => {
           Logout
         </div>
       )}
-     
       <div>
         <a href="https://stevenandkayla-wedding.stevenrjefferson.com/">Home</a>
+      </div>
+      <div>
+        <a href="https://blissful-ramanujan-3a2e3f.netlify.com/">Admin</a>
       </div>
     </div>
   );
